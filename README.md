@@ -1,31 +1,33 @@
-This is a website of Hao-Yung Chan(katrina376).
+This is the personal website of Hao-Yung Chan(katrina376).
 
-* Index
+* CHINESE FIRST THEN ENGLISH *
 
-* About Myself
+### Homepage (index)
+
+### About Myself (about)
 	- Bio
 	- Skills
 	- Education
 	- Experiences
 	- Contact
 
-* Website Projects
+### Archives (archives)
+  * Websites
 	- SLCSponsor v1 & v2
+	- SLCSpiderWeb
 	- CCcloud
 	- DMCE
 	- Lottery
-	- Vote for Climate
 	- TWYCC
 	- Spoilock Holmes
-
-* MatLab Projects
+	- ASPHCamp2013: Into Darkness
+  * MATLAB
 	- Lucky Draw
 	- Barotropic Atmospheric Model
 	- Bowen's Model
 	- Shortest Path Algorithm
+	- Cluster
 
-* Notes
+### Blog (blog)
 
-* Other Works
-
-* What's Next?
+### What's Next? (next)

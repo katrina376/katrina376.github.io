@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+<title>Hao-Yung Chan's Website</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.5.0/base-min.css&pure/0.5.0/grids-min.css&pure/0.5.0/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.5.0/base-min.css&pure/0.5.0/grids-min.css&pure/0.5.0/grids-responsive-min.css">
+<!--<![endif]-->
+<!--<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">-->
+<link rel="stylesheet" href="./css/k376-v1.css">
+</head>
+
+<body>
+<header id="pageHeader">
+	<h1>Hao-Yung Chan / 詹皓詠 / katrina376</h1>
+	<span></span>
+</header>
+<nav class="pure-g" id="navBar">
+	<a href="index.html" class="pure-u-1-5">首頁</a>
+	<a href="about.html" class="pure-u-1-5">關於我</a>
+	<a href="archives.html" class="pure-u-1-5 now">過往檔案</a>
+	<a href="blog.html" class="pure-u-1-5">部落格</a>
+	<a href="next.html" class="pure-u-1-5">未來計畫</a>
+</nav>
+<article>
+	<header>
+		<h1>過往檔案</h1>
+	</header>
+	<section>
+		<h2>網站</h2>
+		<ul>
+			<li><a href="http://cards.ntu.edu.tw/cccloud/" target="_blank">寄雲CCcloud</a></li>
+			<li><a href="http://katrina376.byethost32.com/RPG2013/" target="_blank">ASPHCamp2013 RPG: 闇黑無界 Into Darkness</a></li>
+			<li><a href="http://homepage.ntu.edu.tw/~b00209023/dmce" target="_blank">Hao-Yung Chan's site for DMCE</a></li>
+			<li>尋云拉贊網SLCSponser <a href="http://katrina376.byethost32.com/NTUSLCsponsor/sponsor.php" target="_blank">v1</a>、<a href="http://katrina376.byethost32.com/slcsponsor/sponsorUI/" target="_blank">v2</a></li>
+		</ul>
+	</section>
+	<section>
+		<h2>網頁</h2>
+		<ul>
+			<li><a href="http://katrina376.byethost32.com/mommylottery.html" target="_blank">誰拿哪個包？</a></li>
+			<li><a href="http://homepage.ntu.edu.tw/~b00209023/lottery/mielottery.html" target="_blank">誰唱哪一句？</a></li>
+			<li><a href="http://homepage.ntu.edu.tw/~b00209023/lottery/karalottery.html" target="_blank">誰唱下一首？</a></li>
+			<li><a href="http://homepage.ntu.edu.tw/~b00209023/SLCweb/web.html" target="_blank">尋云蜘蛛網：B01幹部自成一個小世界ver.</a></li>
+		</ul>
+	</section>
+	<section>
+		<h2>作業</h2>
+		<p>Coming Soon!</p>
+	</section>
+</article>
+<footer id="pageFooter">
+	<nav>
+		<ul>
+			<li><a href="index.html">首頁</a></li>
+			<li><a href="about.html">關於我</a></li>
+			<li><a href="archives.html">過往檔案</a></li>
+			<li><a href="blog.html">部落格</a></li>
+			<li><a href="next.html">未來計畫</a></li>
+		</ul>
+	</nav>
+	<span>Copyright (c) 2014 Hao-Yung Chan</span>
+</footer>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script>
+jQuery(document).ready(function(){
+	/* Lock navbar*/
+	navTopOrigin = $('#navBar').offset().top;
+	function scrollFix(){
+		if ($(window).scrollTop() > navTopOrigin){
+			$('article:eq(0)').css('margin-top',$('#navBar').outerHeight());
+			$('#navBar').css('width',$('body').width()+'px');
+			$('#navBar').css('position','fixed')
+			$('#navBar').css('top','0');
+		};
+		if ($(window).scrollTop() < navTopOrigin){
+			$('#navBar').css('top',navTopOrigin+'px');
+			$('#navBar').css('position','')
+			$('article:eq(0)').css('margin-top','');
+		};
+	};
+	scrollFix();
+	$(window).scroll(scrollFix);
+});
+</script>
+</body>
+</html>
