@@ -21,6 +21,7 @@ This is the personal website of Hao-Yung Chan(katrina376).
 	- TWYCC
 	- Spoilock Holmes
 	- ASPHCamp2013: Into Darkness
+	- ASLottery for ASCamp2015
   * MATLAB
 	- Lucky Draw
 	- Barotropic Atmospheric Model

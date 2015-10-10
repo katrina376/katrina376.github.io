@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>ASDisplay</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/jquery.nouislider.min.css">
+<link rel="stylesheet" href="./css/jquery.nouislider.pips.min.css">
+<link rel="stylesheet" href="./css/asd-v1.css">
+</head>
+
+<body>
+<header></header>
+<nav></nav>
+<div id="field" class="h-bar">
+	<a class="btn-pill" href="#">Temperature</a>
+	<a class="btn-pill" href="#">Precipitation</a>
+	<a class="btn-pill" href="#">Wind</a>
+</div>
+<div class="row">
+	<div id="navside" class="v-bar">
+		<p><a class="btn-pill btn-full" href="#">EC</a></p>
+		<p><a class="btn-pill btn-full" href="#">Navy</a></p>
+		<p><a class="btn-pill btn-full" href="#">JMA</a></p>
+		<p><a class="btn-pill btn-full" href="#">CWB</a></p>
+		<div id="navcall" class="v-bar"></div>
+	</div>
+	<div id="view"></div>
+	<div id="right" class="v-bar">
+		<div id="height" class="v-slider"></div>
+	</div>
+</div>
+<div class="h-bar">
+	<div id="time" class="h-slider"></div>
+</div>
+<footer></footer>
+
+ 
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="./js/jquery.nouislider.all.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/easing/EasePack.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+<script>
+jQuery(document).ready(function(){
+	alert('ok');
+	$('#navcall').bind('click',callnav);
+	
+	function callnav() {
+		var navside = $('#navside');
+		TweenLite.to(navside, 0.5, {left:0, ease:Power2.easeInOut, onComplete: offnav});
+	};
+	function offnav() {
+		$('body').bind('click',function(){
+			var navside = $('#navside');
+			TweenLite.to(navside, 0.5, {left:-128, ease:Power2.easeInOut});
+			$('body').unbind('click');
+		});
+	};
+
+	$('.h-slider').noUiSlider({
+		start: [ 4 ],
+		step: 1,
+		range: {
+			'min': [ 0 ],
+			'max': [ 14 ]
+		}
+	});
+	$(".h-slider").noUiSlider_pips({
+		mode: 'count',
+		values: 15,
+		density: 15
+	});
+	$('.v-slider').noUiSlider({
+		start: [ 900 ],
+		step: 100,
+		orientation: "vertical",
+		range: {
+			'min': [ 100 ],
+			'max': [ 1000 ]
+		}
+	});
+	$(".v-slider").noUiSlider_pips({
+		mode: 'count',
+		values: 10,
+		density: 10
+	});
+});
+</script>
+</body>
+
+</html>
