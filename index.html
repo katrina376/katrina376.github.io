@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Hao-Yung (Katrina) Chan"/>
   <meta name="description" content="Website of Hao-Yung (Katrina) Chan"/>
   <title>Katrina H.-Y. Chan</title>
@@ -10,25 +11,49 @@
     margin: 0 auto;
     padding: 1em 2em;
     font-size: 16px;
+    font-family: Times, serif;
     line-height: 1.5;
   }
   header, section {
     padding: 4px 16px;
   }
   header {
-    border-bottom: 2px solid #005b96;
     color: #005b96;
+    font-weight: bold;
+  }
+  body>header {
+    border-bottom: 2px solid #005b96;
+    font-size: 1.6em;
+  }
+  body>section>header {
+    padding-left: 8px;
+    border-left: 8px solid #005b96;
     font-size: 1.2em;
+  }
+  body>section>section>header {
+    padding-left: 0px;
+  }
+  ul, p {
+    margin: 0.6em auto;
   }
   li {
     list-style-type: circle;
+  }
+  a, a:visited {
+    color: #005b96;
+  }
+  a:hover, a:active {
+    color: #aaa;
+  }
+  footer {
+    font-size: 0.8em;
   }
   </style>
 </head>
 <body>
   <header>Website of Katrina H.-Y. Chan</header>
   <section>
-    <p>I am an M.S. and a developer. I develop mostly with Python and sometimes with HTML/CSS/JavaScript. I am also an advocator of open source. My public projects are listed in <a href="https://github.com/katrina376" target="_blank">my GitHub profile</a>.</p>
+    <p>I am an M.S. and a developer. I develop mostly with Python and sometimes with HTML/CSS/JavaScript. Also, I am an advocator of open source. My public projects are listed in <a href="https://github.com/katrina376" target="_blank">my GitHub profile</a>. My master thesis is about dialogue systems (DS), and I currently work with M.-H. Tsai, Ph.D. for furthur developments about the applications of DS in civil engineering and disaster management.</p>
     <p>I am interested in...</p>
     <ul>
       <li>Informatization (of all those nasty manual works)</li>
@@ -43,9 +68,137 @@
     <ul>
       <li>E-mail: katrina[dot]hyc[at]gmail[dot]com</li>
       <li>GitHub: <a href="https://github.com/katrina376" target="_blank">katrina376</a></li>
-      <li>Twitter: <a href="https://twitter.com/haoyung_chan" targer="_blank">haoyung_chan</a></li>
-      <li>Plurk: <a href="https://plurk.com/katrina376" targer="_blank">katrina376</a></li>
+      <li>Twitter: <a href="https://twitter.com/haoyung_chan" target="_blank">haoyung_chan</a></li>
+      <li>Plurk: <a href="https://plurk.com/katrina376" target="_blank">katrina376</a></li>
+    </ul>
+    <p>I'm planning to write articles about some interesting researches or developments and put them on <a href="https://blog.katrina.tw" target="_blank">my blog</a>. Comments are definetely welcomed!</p>
+  </section>
+  <section>
+    <header>Academic Publications</header>
+    <ul>
+      <li>
+        Chan, H.-Y., Yang, C.-H. Tsai, M.-H. and Kang, S.-C. (2018). Knowledge Base for a Disaster Management Dialogue System. 2018 Proceedings of the 35th ISARC, Berlin, Germany. <a href="http://www.iaarc.org/publications/2018_proceedings_of_the_35th_isarc/knowledge_base_for_a_disaster_management_dialogue_system.html" target="_blank">[LINK]</a>
+      </li>
+      <li>
+        Chan, H.-Y., Tsai, M.-H. and Kang, S.-C. (reviewing). Quesiton-Answering Dialogue System for Emergency Operations. <em>Computer Speech and Language</em>.
+      </li>
     </ul>
   </section>
+  <section>
+    <header>Participated Researches</header>
+    <ul>
+      <li>科技部自然司「對話式防災決策輔助系統」計畫</li>
+      <li>科技部科教國合司「跨領域工程教育人才培育與研究」計畫</li>
+      <li>公共工程委員會「災後復建工程經費審議及執行資訊系統資料分析及加值應用」<a href="https://gpi.culture.tw/books/1010601324" target="_blank">[LINK]</a></li>
+    </ul>
+  </section>
+  <section>
+    <header>Pieceworks</header>
+    <ul>
+      <li><strong>NTUVote Authentication Server MINI</strong>, a alternative voting authentication server powered by Google Apps Script, for the Student's Association, National Taiwan University (2018-)</li>
+      <li><strong>Batchgoo</strong>, an automatic search application that reads *.xlsx, searches via Google Search Engine or Custom Search API, and picks out the qualified results, for Eurasia (2018)</li>
+      <li><strong>Fudez</strong>, an customized electroninc accounting system, for the Student Association, National Taiwan University (2017-2018)</li>
+      <li><strong>Vote Compass</strong>, a voting advice application generator using Markdown for configuration, for the Student's Association, National Taiwan University (2018)</li>
+    </ul>
+  </section>
+  <section>
+    <header>Non-commercial Projects</header>
+    <ul>
+      <li><strong>NTUVote Election Landing Page</strong>, for the Student's Association, National Taiwan University (2016-2018)</li>
+      <li><strong>NTUVote Registration System and Announcement Generator</strong>, powered by Google Apps Script, for the Student's Association, National Taiwan University (2016-2018)</li>
+    </ul>
+  </section>
+  <section>
+    <header>Work and Intern Experiences</header>
+    <ul>
+      <li>Employee, KASE (2018.8-current)</li>
+      <li>Network Administrator, Computer-Aided Engineering Division, Department of Civil Engineering, National Taiwan University (2017.1-2018.7)</li>
+      <li>Intern, National Science and Technology Center for Disaster Reduction (2015.7)</li>
+      <li>Web Developer, CCcloud (2012.10-2015.1)</li>
+      <li>Instructor, Sign Language Club, New Taipei Municipal Zhonghe Senior High School (2016.2-current)</li>
+      <li>Instructor, Caring Club, Sung-Shan High School of Commerce and Home Economics (2015.2-2015.6)</li>
+      <li>Instructor, Sign Language Club, Jinou Girls High School (2014.9-2015.6)</li>
+    </ul>
+  </section>
+  <section>
+    <header>Association, Community, and Conference Attendance</header>
+    <section>
+      <header>Student Congress, National Taiwan University (NTUSC)</header>
+      <ul>
+        <li>Congress Member from the College of Engineering (2018.2-2018.7)</li>
+        <li>Chairperson of Election and Recalling Control Commission (2018.2-2018.7)</li>
+        <li>Commissioner of Legalality Commission (2018.2-2018.7)</li>
+        <li>Commissioner of External Affairs Commission (2018.2-2018.7)</li>
+      </ul>
+    </section>
+    <section>
+      <header>Student Association, National Taiwan University (NTUSA)</header>
+      <ul>
+        <li>
+          Election and Recalling Execution Commision (NTUVote)
+          <ul>
+            <li>Chairperson (2016.9-2017.9)</li>
+            <li>Vice Chairperson (2016.2-2016.9)</li>
+            <li>Commissioner of Voting Affairs (2015.9-2016.2)</li>
+          </ul>
+        </li>
+        <li>
+          Information Task Force, Secretary Department (2016.2-2016.7)
+        </li>
+      </ul>
+    </section>
+    <section>
+      <header>Sign Language Club, National Taiwan University (NTUSLC)</header>
+      <ul>
+        <li>Commissioner of Control Commission (2014.8-2016.7)</li>
+        <li>Coordinator of Cadre Trains (2014.5-2014.8)</li>
+        <li>Coordinator of Study Group (2014.2-2014.7)</li>
+        <li>Web Administrator (2013.8-2014.1)</li>
+        <li>Member (2013.2-current)</li>
+      </ul>
+      I've also participated in serveral events, including:
+      <ul>
+        <li>Senior Member Cup (3<sup>rd</sup> place in 2013, champion in 2016)</li>
+        <li>Demonstration of Rookie Cup Final (2014, 2015)</li>
+        <li>SLC Night (2013-2015)</li>
+        <li>Rookie's Night (2013, 2014)</li>
+        <li>Literally countless performances</li>
+      </ul>
+    </section>
+    <section>
+      <header>Atmospheric Sciences Camp, National Taiwan University (ASCamp)</header>
+      <ul>
+        <li>Final Presentation Juror (2015)</li>
+        <li>Coordinator (2013)</li>
+        <li>Instructor (2012-2014)</li>
+        <li>Counselor (2012, 2014)</li>
+        <li>Chief of Counselor Section (2012)</li>
+      </ul>
+    </section>
+    <section>
+      <header>Students' Information Technology Conference (SITCON)</header>
+      <ul>
+        <li>Volunteer of Agenda Group (2016-current)</li>
+      </ul>
+    </section>
+  </section>
+  <footer>
+    This page is updated at: <span id="last-update"></span>
+  </footer>
+  <script>
+  const $ = (s) => document.querySelector(s);
+
+  const URL = 'https://api.github.com/repos/katrina376/katrina376.github.io';
+
+  var request = new XMLHttpRequest();
+  request.open('GET', URL);
+  request.responseType = 'json';
+  request.send();
+
+  request.onload = function() {
+    var data = request.response;
+    $('#last-update').innerHTML = data.updated_at;
+  }
+  </script>
 </body>
 </html>
